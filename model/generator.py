@@ -24,6 +24,11 @@ class Generator:
         while (x == y):
             y = self.animals[random.randint(0, len(self.animals) - 1)]
         return Pair(x, y)
+    
+    def createGivenPair(self, a, b):
+        x = Generator.getAnimal(a)
+        y = Generator.getAnimal(b)
+        return Pair(a, b)
 
     def getAnimal(self, str):
         str = str.lower()

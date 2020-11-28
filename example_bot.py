@@ -49,7 +49,24 @@ async def random(ctx):
 @client.command()
 async def choice(ctx, *, information):
     words = len(information)
-    await ctx.send(f'{information} is {str(words)}')
+    print(f'{information} has {words} words')
+    i = information.split(' ')
+    if words == 4:
+        a = i[0] + " " + i[1]
+        b = i[2] + " " + i[3]
+        pair = gen.createGivenPair(a, b)
+    elif words == 3:
+        a = i[0] + " " + i[1]
+        b = i[2]
+        if (gen.getAnimal(a) == None):
+            a = i[0]
+            b = i[1] + " " + i[2]
+        pair = gen.createGivenPair(a, b)
+    elif words == 2:
+        pair = gen.createGivenPair(i[0], i[1])
+    else:
+        return
+    await sendMessage(ctx, 1, pair)
 
 @client.command()
 async def fixedNumber(ctx,number, *, animal):
