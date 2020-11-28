@@ -34,6 +34,8 @@ class Animal:
             return '\U0001f43C'
         elif(self.name == "rabbit"):
             return '\U0001f407'
+        elif(self.name == "cat"):
+            return '\U0001f63a'
         elif(self.name == "mouse"):
             return '\U0001f42d'
         elif(self.name == "hamster"):

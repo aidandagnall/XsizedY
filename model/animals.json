@@ -76,182 +76,182 @@
       "size": "small",
       "plural": "cats",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f63a"
     },
     {
       "name":"mouse",
       "size":"small",
       "plural":"mice",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f42d"
     },
     {
       "name": "hamster",
       "size": "small",
       "plural": "hamsters",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f439"
     },
     {
       "name":"fox",
       "size":"medium",
       "plural":"foxes",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f98a"
     },
     {
       "name":"bear",
       "size":"large",
       "plural":"bears",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f43b"
     },
     {
       "name":"polar bear",
       "size":"large",
       "plural":"polar bears",
       "score":0,
-      "emoji": ""
+      "emoji": "0001200d"
     },
     {
       "name":"koala",
       "size":"medium",
       "plural":"koalas",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f428"
     },
     {
       "name":"tiger",
       "size":"large",
       "plural":"tigers",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f42f"
     },
     {
       "name":"lion",
       "size":"large",
       "plural":"lions",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f981"
     },
     {
       "name":"frog",
       "size":"small",
       "plural":"frogs",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f438"
     },
     {
       "name":"monkey",
       "size":"medium",
       "plural":"monkeys",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f648"
     },
     {
       "name":"penguin",
       "size":"medium",
       "plural":"penguins",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f427"
     },
     {
       "name":"bird",
       "size":"small",
       "plural":"birds",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f426"
     },
     {
       "name":"dodo",
       "size":"medium",
       "plural":"dodoes",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f9a4"
     },
     {
       "name":"eagle",
       "size":"medium",
       "plural":"eagles",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f985"
     },
     {
       "name":"owl",
       "size":"small",
       "plural":"owls",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f989"
     },
     {
       "name":"bat",
       "size":"small",
       "plural":"bats",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f987"
     },
     {
       "name":"wolf",
       "size":"medium",
       "plural":"wolves",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f43a"
     },
     {
       "name":"boar",
       "size":"medium",
       "plural":"boars",
       "score":0,
-      "emoji": ""
+      "emoji": "0001f417"
     },
     {
       "name" :"bee",
       "size" :"micro",
       "plural" : "bees",
       "score" : 0,
-      "emoji" : ""
+      "emoji" : "0001f41d"
     },
     {
       "name":"snail",
       "size":"small",
       "plural":"snails",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f40c"
     },
     {
       "name":"lady bug",
       "size":"micro",
       "plural":"lady bugs",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f41e"
     },
     {
       "name":"ant",
       "size":"micro",
       "plural":"ants",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f41c"
     },
     {
       "name":"fly",
       "size":"micro",
       "plural":"flies",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001fab0"
     },
     {
       "name":"snake",
       "size":"medium",
       "plural":"snakes",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f40d"
     },
     {
       "name":"lizard",
       "size":"small",
       "plural":"lizards",
       "score": 0,
-      "emoji": ""
+      "emoji": "0001f98e"
     }
   ]
 }
