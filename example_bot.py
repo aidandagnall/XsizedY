@@ -47,8 +47,9 @@ async def random(ctx):
     await sendMessage(ctx, n, pair)
 
 @client.command()
-async def choice(ctx):
-    await ctx.send('Choice')
+async def choice(ctx, *, information):
+    words = len(information)
+    await ctx.send(f'{information} is {str(words)}')
 
 @client.command()
 async def fixedNumber(ctx,number, *, animal):
