@@ -30,7 +30,7 @@ async def choice(ctx):
     await ctx.send('Choice')
 
 @client.command()
-async def fixedNumber(ctx,number,animal):
+async def fixedNumber(ctx,number, *, animal):
     pair = Generator.createPair(gen, Generator.getAnimal(gen, animal))
     await sendMessage(ctx, number, pair)
 
