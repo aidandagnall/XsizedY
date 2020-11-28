@@ -1,18 +1,20 @@
 import discord
-import config
-
-client = discord.Client()
+from discord.ext import commands
+import random
+import os
+client = commands.Bot(command_prefix = '!')
 
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print('Bot is ready')
 
 @client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+async def on_member_join(ctx,member):
+    await ctx.send(f'(member) has joined the server')
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+@client.event
+async def on_member_remove(ctx,member):
+    await ctx.send(f'(member) has left the server')
+
 
 client.run(config.bot_token)
