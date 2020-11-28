@@ -22,7 +22,7 @@ async def on_member_remove(ctx,member):
 
 @client.command()
 async def random(ctx):
-    pair = Generator.createPair(gen)
+    pair = Generator.createPairRand(gen)
     await ctx.send(f'{pair.x.name} {pair.y.name}')
 
 @client.command()
@@ -31,5 +31,6 @@ async def choice(ctx):
 
 @client.command()
 async def fixedNumber(ctx,number,animal):
-    await ctx.send(f'{number} {animal}')
+    pair = Generator.createPair(gen,animal)
+    await ctx.send(f'Would you rather fight 1 {pair.y.name} sized {animal} or 20 {animal} sized {pair.y.name}?')
 client.run(config.bot_token)
