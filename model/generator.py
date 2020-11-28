@@ -10,10 +10,6 @@ class Generator:
             self.data = json.load(json_file)
             for p in self.data['animals']:
                 self.animals.append(Animal(p['name'], p['score'], p['plural'], p['size']))
-        #self.file = open("model/Animals.csv", "r")
-        #reader = csv.reader(self.file, delimiter =",")
-        #for row in reader:
-        #    self.animals.append(Animal(row[0], row[1]))
     
     def createPairRand(self):
         # x, y  = new random animal
