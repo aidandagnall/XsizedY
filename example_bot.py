@@ -1,3 +1,4 @@
+from model.generator import Generator
 import discord
 from discord.ext import commands
 import csv
@@ -5,6 +6,7 @@ import random
 import config
 import os
 client = commands.Bot(command_prefix = '!')
+gen = Generator()
 
 @client.event
 async def on_ready():
@@ -20,7 +22,8 @@ async def on_member_remove(ctx,member):
 
 @client.command()
 async def random(ctx):
-    await ctx.send('Random')
+    pair = Generator.createPair(gen)
+    await ctx.send(f'{pair.x.name} {pair.y.name}')
 
 @client.command()
 async def choice(ctx):

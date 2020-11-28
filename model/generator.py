@@ -5,20 +5,16 @@ import random
 class Generator:
     def __init__(self) -> None:
         self.animals = []
-        self.file = open("../Animals.csv", "r")
+        self.file = open("model/Animals.csv", "r")
         reader = csv.reader(self.file, delimiter =",")
         for row in reader:
-            self.animals.add(Animal(row[0], row[1]))
+            self.animals.append(Animal(row[0], row[1]))
     
     def createPair(self):
         # x, y  = new random animal
         x = y = 1
         while (x == y):
-            x = self.animals[random.randint(0, len(self.animals))]
-            y = self.animals[random.randint(0, len(self.animals))]
+            x = self.animals[random.randint(0, len(self.animals) - 1)]
+            y = self.animals[random.randint(0, len(self.animals) - 1)]
 
-        return Pair(x, y)
-
-    def createPair(x):
-        # y = new random animal
         return Pair(x, y)
