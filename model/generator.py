@@ -12,9 +12,8 @@ class Generator:
     
     def createPair(self):
         # x, y  = new random animal
-        x = 1
-        y = 2
-        while (x != y):
+        x = y = 1
+        while (x == y):
             x = self.animals[random.randint(0, len(self.animals))]
             y = self.animals[random.randint(0, len(self.animals))]
 
