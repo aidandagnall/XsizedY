@@ -68,6 +68,10 @@ async def choice(ctx, *, information):
     await sendMessage(ctx, 1, pair)
 
 @client.command()
+async def TopScore(ctx):
+    gen.TOPSCORE()
+
+@client.command()
 async def fixedNumber(ctx,number, *, animal):
     pair = gen.createPair(Generator.getAnimal(gen, animal))
     await sendMessage(ctx, number, pair)
