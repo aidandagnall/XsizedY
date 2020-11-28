@@ -7,9 +7,6 @@ class Animal:
         self.size = size
         self.emoji = Animal.getEmoji(self)
 
-    def __eq__ (self, other):
-        return self.name == other.name
-
     def __lt__ (self, other):
         return self.size < other.size
     
@@ -48,7 +45,7 @@ class Animal:
         elif(self.name == "bear"):
             return '\U0001f43b'
         elif(self.name == "polar bear"):
-            return '\U0001f274'
+            return '\U00002744'
         elif(self.name == "koala"):
             return '\U0001f428'
         elif(self.name == "tiger"):

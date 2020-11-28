@@ -48,35 +48,39 @@ async def random(ctx):
 
 @client.command()
 async def choice(ctx, *, information):
-    words = len(information)
-    print(f'{information} has {words} words')
     i = information.split(' ')
+    words = len(i)
     if words == 4:
         a = i[0] + " " + i[1]
         b = i[2] + " " + i[3]
-        pair = gen.createGivenPair(a, b)
+        pair = gen.createGivenPair(gen.getAnimal(a), gen.getAnimal(b))
     elif words == 3:
         a = i[0] + " " + i[1]
         b = i[2]
         if (gen.getAnimal(a) == None):
             a = i[0]
             b = i[1] + " " + i[2]
-        pair = gen.createGivenPair(a, b)
+        pair = gen.createGivenPair(gen.getAnimal(a), gen.getAnimal(b))
     elif words == 2:
-        pair = gen.createGivenPair(i[0], i[1])
+        pair = gen.createGivenPair(gen.getAnimal(i[0]), gen.getAnimal(i[1]))
     else:
         return
     await sendMessage(ctx, 1, pair)
 
 @client.command()
 async def fixedNumber(ctx,number, *, animal):
-    pair = Generator.createPair(gen, Generator.getAnimal(gen, animal))
+    pair = gen.createPair(Generator.getAnimal(gen, animal))
     await sendMessage(ctx, number, pair)
 
 async def sendMessage(ctx, number, pair):
-    str = f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} {pair.x.emoji} or {number} {pair.x.name} sized {pair.y.plural} {pair.y.emoji}?'
+    yName = pair.y.name if number == 1 else pair.y.plural
+    number = "a" if number == 1 else number
+    str = f'Would you rather fight a {pair.y.name} sized {pair.x.name} {pair.x.emoji} or {number} {pair.x.name} sized {yName} {pair.y.emoji}?'
     message = await ctx.send(str)
     await message.add_reaction(pair.x.emoji)
     await message.add_reaction(pair.y.emoji)
+
+def getGenerator():
+    return gen
 
 client.run(config.bot_token)

@@ -1,8 +1,8 @@
 from model.pair import Pair
 from model.animal import Animal
-import csv
 import json
 import random
+
 class Generator:
     def __init__(self) -> None:
         self.animals = []
@@ -14,7 +14,7 @@ class Generator:
     def createPairRand(self):
         # x, y  = new random animal
         x = y = Animal("", 0, "", "")
-        while (x == y or y.size <= x.size):
+        while (x.name == y.name or y.size <= x.size):
             x = self.animals[random.randint(0, len(self.animals) - 1)]
             y = self.animals[random.randint(0, len(self.animals) - 1)]
         return Pair(x, y)
@@ -26,8 +26,8 @@ class Generator:
         return Pair(x, y)
     
     def createGivenPair(self, a, b):
-        x = Generator.getAnimal(a)
-        y = Generator.getAnimal(b)
+        if a == None or b == None:
+            return None
         return Pair(a, b)
 
     def getAnimal(self, str):
@@ -35,4 +35,4 @@ class Generator:
         for animal in self.animals:
             if str == animal.name:
                 return animal
-        return Animal(str, 0)
+        return None
