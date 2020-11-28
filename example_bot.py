@@ -32,5 +32,5 @@ async def choice(ctx):
 @client.command()
 async def fixedNumber(ctx,number,animal):
     pair = Generator.createPair(gen, Generator.getAnimal(gen, animal))
-    await ctx.send(f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} or {number} {pair.x.name} sized {pair.y.name}s?')
+    await ctx.send(f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} or {number} {pair.x.name} sized {pair.y.plural}?')
 client.run(config.bot_token)

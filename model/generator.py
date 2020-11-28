@@ -1,14 +1,19 @@
 from model.pair import Pair
 from model.animal import Animal
 import csv
+import json
 import random
 class Generator:
     def __init__(self) -> None:
         self.animals = []
-        self.file = open("model/Animals.csv", "r")
-        reader = csv.reader(self.file, delimiter =",")
-        for row in reader:
-            self.animals.append(Animal(row[0], row[1]))
+        with open('model/animals.json') as json_file:
+            self.data = json.load(json_file)
+            for p in self.data['animals']:
+                self.animals.append(Animal(p['name'], p['score'], p['plural'], p['size']))
+        #self.file = open("model/Animals.csv", "r")
+        #reader = csv.reader(self.file, delimiter =",")
+        #for row in reader:
+        #    self.animals.append(Animal(row[0], row[1]))
     
     def createPairRand(self):
         # x, y  = new random animal
