@@ -9,7 +9,7 @@ class Generator:
         with open('model/animals.json') as json_file:
             self.data = json.load(json_file)
             for p in self.data['animals']:
-                self.animals.append(Animal(p['name'], p['score'], p['plural'], p['size'], '😀'))
+                self.animals.append(Animal(p['name'], p['score'], p['plural'], p['size'], p['emoji']))
     
     def createPairRand(self):
         # x, y  = new random animal

@@ -5,7 +5,7 @@ class Animal:
         self.score = score
         self.plural = plural
         self.size = size
-        self.emoji = emoji
+        self.emoji = f'\U{emoji}'
 
     def __eq__ (self, other):
         return self.name == other.name
