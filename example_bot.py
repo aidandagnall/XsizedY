@@ -23,7 +23,7 @@ async def on_member_remove(ctx,member):
 @client.command()
 async def random(ctx):
     pair = Generator.createPairRand(gen)
-    sendMessage()
+    await sendMessage(ctx, 10, pair)
 
 @client.command()
 async def choice(ctx):
@@ -32,7 +32,7 @@ async def choice(ctx):
 @client.command()
 async def fixedNumber(ctx,number,animal):
     pair = Generator.createPair(gen, Generator.getAnimal(gen, animal))
-    sendMessage()
+    await sendMessage(ctx, number, pair)
 
 async def sendMessage(ctx, number, pair):
     str = f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} or {number} {pair.x.name} sized {pair.y.plural}?'
