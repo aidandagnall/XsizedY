@@ -10,11 +10,16 @@ class Generator:
         for row in reader:
             self.animals.append(Animal(row[0], row[1]))
     
-    def createPair(self):
+    def createPairRand(self):
         # x, y  = new random animal
         x = y = 1
         while (x == y):
             x = self.animals[random.randint(0, len(self.animals) - 1)]
             y = self.animals[random.randint(0, len(self.animals) - 1)]
-
+        return Pair(x, y)
+    
+    def createPair(self, x):
+        y = x
+        while (x == y):
+            y = self.animals[random.randint(0, len(self.animals) - 1)]
         return Pair(x, y)
