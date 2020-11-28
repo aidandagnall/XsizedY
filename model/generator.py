@@ -6,7 +6,6 @@ import random
 class Generator:
     def __init__(self) -> None:
         self.animals = []
-        self.scores = [0,0,0,0,0,0,0,0,0,0]
         with open('model/animals.json') as json_file:
             self.data = json.load(json_file)
             for p in self.data['animals']:
@@ -37,17 +36,4 @@ class Generator:
             if str == animal.name:
                 return animal
         return None
-    def TOPSCORE(self):
-        file = open("model/animals.json","r")
-        json_object = json.load(file)
-        file.close()
-        for i in range(len(json_object['animals'])):
-            print(str(json_object['animals'][i]['score']))
-            if json_object['animals'][i]['score'] > self.scores[9]:
-                for x in self.scores:
-                    if json_object['animals'][i]['score'] >= self.scores[x]:
-                        self.scores.insert(x,json_object['animals'][i]['score'])
-                        self.scores.pop(10)
-                        self.scores.sort(reverse=True)
-                        break
-        print(str(self.scores))
+
