@@ -13,6 +13,28 @@ async def on_ready():
     print('Bot is ready')
 
 @client.event
+async def on_reaction_add(reaction, user):
+    if (user.id == client.user.id):
+        return
+    for animal in gen.animals:
+        if animal.emoji == reaction.emoji:
+            animal.score += 1
+            await reaction.message.channel.send(f"Added point to {animal.name}")
+            return
+
+@client.event
+async def on_reaction_remove(reaction, user):
+    if (user.id == client.user.id):
+        return
+    for animal in gen.animals:
+        if animal.emoji == reaction.emoji:
+            animal.score -= 1
+            await reaction.message.channel.send(f"Removed point from {animal.name}")
+            return
+    
+
+
+@client.event
 async def on_member_join(ctx,member):
     await ctx.send(f'(member) has joined the server')
 
@@ -23,7 +45,8 @@ async def on_member_remove(ctx,member):
 @client.command()
 async def random(ctx):
     pair = Generator.createPairRand(gen)
-    await sendMessage(ctx, 10, pair)
+    n = 3 * (pair.y.size - pair.x.size)
+    await sendMessage(ctx, n, pair)
 
 @client.command()
 async def choice(ctx):

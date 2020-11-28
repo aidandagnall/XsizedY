@@ -14,7 +14,7 @@ class Generator:
     def createPairRand(self):
         # x, y  = new random animal
         x = y = Animal("", 0, "", "")
-        while (x == y or x.size == y.size):
+        while (x == y or y.size <= x.size):
             x = self.animals[random.randint(0, len(self.animals) - 1)]
             y = self.animals[random.randint(0, len(self.animals) - 1)]
         return Pair(x, y)
