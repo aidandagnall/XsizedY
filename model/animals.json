@@ -5,35 +5,35 @@
       "size": "large",
       "plural": "cows",
       "score": 0,
-      "emoji":
+      "emoji": "0001F404"
     },
     {
       "name": "pig",
       "size": "medium",
       "plural": "pigs",
       "score": 0,
-      "emoji":
+      "emoji": "0001F437"
     },
     {
       "name": "chicken",
       "size": "small",
       "plural": "chickens",
       "score": 0,
-      "emoji":
+      "emoji": "0001F414"
     },
     {
       "name": "horse",
       "size": "large",
       "plural": "heese",
       "score": 0,
-      "emoji":
+      "emoji": "0001F40E"
     },
     {
       "name": "goat",
       "size": "medium",
       "plural": "goats",
       "score": 0,
-      "emoji":
+      "emoji": "0001F410"
 
     },
     {
@@ -41,35 +41,35 @@
       "size": "medium",
       "plural": "sheep",
       "score":0,
-      "emoji":
+      "emoji": "0001F411"
     },
     {
       "name": "duck" ,
       "size": "small",
       "plural": "ducks" ,
-      "score":0,
-      "emoji":
+      "score": 0,
+      "emoji": "0001F986"
     },
     {
       "name": "llama" ,
       "size": "large",
       "plural": "llamas",
       "score":0,
-      "emoji":
+      "emoji": "0001F999"
     },
     {
-      "name":"donkey" ,
+      "name":"panda" ,
       "size": "large",
-      "plural": "donkeys",
+      "plural": "pandas",
       "score":0,
-      "emoji":
+      "emoji": "0001F43C"
     },
     {
       "name": "rabbit",
       "size": "small",
       "plural": "rabbits" ,
       "score":0,
-      "emoji":
+      "emoji": "0001F407"
     }
   ]
 }
