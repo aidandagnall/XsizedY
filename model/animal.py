@@ -1,10 +1,11 @@
 
 class Animal:
-    def __init__(self, name, score, plural, size) -> None:
+    def __init__(self, name, score, plural, size, emoji) -> None:
         self.name = name
         self.score = score
         self.plural = plural
         self.size = size
+        self.emoji = emoji
 
     def __eq__ (self, other):
         return self.name == other.name
