@@ -43,7 +43,7 @@ class Animal:
         elif(self.name == "bear"):
             return '\U0001f43b'
         elif(self.name == "polar bear"):
-            return '\U000200d'
+            return '\U0001200d'
         elif(self.name == "koala"):
             return '\U0001f428'
         elif(self.name == "tiger"):
