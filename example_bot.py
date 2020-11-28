@@ -19,21 +19,17 @@ async def on_reaction_add(reaction, user):
     for animal in gen.animals:
         if animal.emoji == reaction.emoji:
             animal.score += 1
-            await reaction.message.channel.send(f"Added point to {animal.name}")
             return
 
 @client.event
 async def on_raw_reaction_remove(payload):
 
     channel = client.get_channel(payload.channel_id)
-    await channel.send("Reaction remove event fired")
     if (payload.user_id == client.user.id):
         return
-    await channel.send(payload.emoji.name)
     for animal in gen.animals:
         if animal.emoji == payload.emoji.name:
             animal.score -= 1
-            await payload.channel_id.send(f"Removed point from {animal.name}")
             return
 
 @client.event
