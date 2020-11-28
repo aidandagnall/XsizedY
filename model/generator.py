@@ -23,3 +23,10 @@ class Generator:
         while (x == y):
             y = self.animals[random.randint(0, len(self.animals) - 1)]
         return Pair(x, y)
+
+    def getAnimal(self, str):
+        str = str.lower()
+        for animal in self.animals:
+            if str == animal.name:
+                return animal
+        return Animal(str, 0)

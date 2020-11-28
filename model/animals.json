@@ -1,0 +1,13 @@
+{
+    "animals" : [
+        {
+            "name": "cow",
+            "size": "large",
+            "plural": "cows",
+            "score": 0
+        },
+        {
+
+        }
+    ]
+}
