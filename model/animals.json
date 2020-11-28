@@ -1,13 +1,65 @@
 {
-    "animals" : [
-        {
-            "name": "cow",
-            "size": "large",
-            "plural": "cows",
-            "score": 0
-        },
-        {
+  "animals": [
+    {
+      "name": "cow",
+      "size": "large",
+      "plural": "cows",
+      "score": 0
+    },
+    {
+      "name": "pig",
+      "size": "medium",
+      "plural": "pigs",
+      "score": 0
+    },
+    {
+      "name": "chicken",
+      "size": "small",
+      "plural": "chickens",
+      "score": 0
+    },
+    {
+      "name": "horse",
+      "size": "large",
+      "plural": "heese",
+      "score": 0
+    },
+    {
+      "name": "goat",
+      "size": "medium",
+      "plural": "goats",
+      "score": 0
 
-        }
-    ]
+    },
+    {
+      "name": "sheep",
+      "size": "medium",
+      "plural": "sheep",
+      "score":0
+    },
+    {
+      "name": "duck" ,
+      "size": "small",
+      "plural": "ducks" ,
+      "score":0
+    },
+    {
+      "name": "llama" ,
+      "size": "large",
+      "plural": "llamas",
+      "score":0
+    },
+    {
+      "name":"donkey" ,
+      "size": "large",
+      "plural": "donkeys",
+      "score":0
+    },
+    {
+      "name": "rabbit",
+      "size": "small",
+      "plural": "rabbits" ,
+      "score":0
+    }
+  ]
 }
