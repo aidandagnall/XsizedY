@@ -35,7 +35,7 @@ async def fixedNumber(ctx,number,animal):
     await sendMessage(ctx, number, pair)
 
 async def sendMessage(ctx, number, pair):
-    str = f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} or {number} {pair.x.name} sized {pair.y.plural}?'
+    str = f'Would you rather fight 1 {pair.y.name} sized {pair.x.name} {pair.x.emoji} or {number} {pair.x.name} sized {pair.y.plural} {pair.y.emoji}?'
     message = await ctx.send(str)
     await message.add_reaction(pair.x.emoji)
     await message.add_reaction(pair.y.emoji)
