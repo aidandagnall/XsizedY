@@ -20,12 +20,13 @@ async def on_member_remove(ctx,member):
 
 @client.command()
 async def random(ctx):
-    return
+    await ctx.send('Random')
 
 @client.command()
 async def choice(ctx):
-    return
+    await ctx.send('Choice')
 
+@client.command()
 async def fixedNumber(ctx,number,animal):
-    return
+    await ctx.send(f'{number} {animal}')
 client.run(config.bot_token)
