@@ -1,0 +1,256 @@
+{
+    "animals": [
+        {
+            "emoji": "\\U0001f404",
+            "name": "cow",
+            "plural": "cows",
+            "score": 5,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f437",
+            "name": "pig",
+            "plural": "pigs",
+            "score": 0,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f414",
+            "name": "chicken",
+            "plural": "chickens",
+            "score": 2,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f40e",
+            "name": "horse",
+            "plural": "heese",
+            "score": 1,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f410",
+            "name": "goat",
+            "plural": "goats",
+            "score": 2,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f411",
+            "name": "sheep",
+            "plural": "sheep",
+            "score": 6,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f986",
+            "name": "duck",
+            "plural": "ducks",
+            "score": 3,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f999",
+            "name": "llama",
+            "plural": "llamas",
+            "score": 2,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f43C",
+            "name": "panda",
+            "plural": "pandas",
+            "score": 1,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f407",
+            "name": "rabbit",
+            "plural": "rabbits",
+            "score": 5,
+            "size": 1
+        },
+        {
+            "emoji": "\\U0001f63a",
+            "name": "cat",
+            "plural": "cats",
+            "score": 4,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f42d",
+            "name": "mouse",
+            "plural": "mice",
+            "score": 11,
+            "size": 1
+        },
+        {
+            "emoji": "\\U0001f439",
+            "name": "hamster",
+            "plural": "hamsters",
+            "score": 0,
+            "size": 1
+        },
+        {
+            "emoji": "\\U0001f98a",
+            "name": "fox",
+            "plural": "foxes",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f43b",
+            "name": "bear",
+            "plural": "bears",
+            "score": 0,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001200d",
+            "name": "polar bear",
+            "plural": "polar bears",
+            "score": 0,
+            "size": 5
+        },
+        {
+            "emoji": "\\U0001f428",
+            "name": "koala",
+            "plural": "koalas",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f42f",
+            "name": "tiger",
+            "plural": "tigers",
+            "score": 0,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f981",
+            "name": "lion",
+            "plural": "lions",
+            "score": 0,
+            "size": 4
+        },
+        {
+            "emoji": "\\U0001f438",
+            "name": "frog",
+            "plural": "frogs",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001f648",
+            "name": "monkey",
+            "plural": "monkeys",
+            "score": 0,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f427",
+            "name": "penguin",
+            "plural": "penguins",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f426",
+            "name": "bird",
+            "plural": "birds",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f9a4",
+            "name": "dodo",
+            "plural": "dodoes",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f985",
+            "name": "eagle",
+            "plural": "eagles",
+            "score": 0,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f989",
+            "name": "owl",
+            "plural": "owls",
+            "score": 0,
+            "size": 2
+        },
+        {
+            "emoji": "\\U0001f987",
+            "name": "bat",
+            "plural": "bats",
+            "score": 0,
+            "size": 1
+        },
+        {
+            "emoji": "\\U0001f43a",
+            "name": "wolf",
+            "plural": "wolves",
+            "score": 0,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f417",
+            "name": "boar",
+            "plural": "boars",
+            "score": 0,
+            "size": 3
+        },
+        {
+            "emoji": "\\U0001f41d",
+            "name": "bee",
+            "plural": "bees",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001f40c",
+            "name": "snail",
+            "plural": "snails",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001f41e",
+            "name": "lady bug",
+            "plural": "lady bugs",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001f41c",
+            "name": "ant",
+            "plural": "ants",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001fab0",
+            "name": "fly",
+            "plural": "flies",
+            "score": 0,
+            "size": 0
+        },
+        {
+            "emoji": "\\U0001f40d",
+            "name": "snake",
+            "plural": "snakes",
+            "score": 1,
+            "size": 1
+        },
+        {
+            "emoji": "\\U0001f98e",
+            "name": "lizard",
+            "plural": "lizards",
+            "score": 1,
+            "size": 1
+        }
+    ]
+}

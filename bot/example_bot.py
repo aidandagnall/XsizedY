@@ -19,6 +19,7 @@ async def on_reaction_add(reaction, user):
     for animal in gen.animals:
         if animal.emoji == reaction.emoji:
             animal.score += 1
+            gen.saveJSON(animal.name, animal.score)
             return
 
 @client.event
@@ -30,6 +31,7 @@ async def on_raw_reaction_remove(payload):
     for animal in gen.animals:
         if animal.emoji == payload.emoji.name:
             animal.score -= 1
+            gen.saveJSON(animal.name, animal.score)
             return
 
 @client.event
@@ -43,7 +45,7 @@ async def on_member_remove(ctx,member):
 @client.command()
 async def random(ctx):
     pair = Generator.createPairRand(gen)
-    n = 3 * (pair.y.size - pair.x.size)
+    n = 2 ** (pair.y.size - pair.x.size)
     await sendMessage(ctx, n, pair)
 
 @client.command()
@@ -66,6 +68,13 @@ async def choice(ctx, *, information):
     else:
         return
     await sendMessage(ctx, 1, pair)
+
+@client.command()
+async def score(ctx):
+    embed = discord.Embed(title="Scores")
+    for i in gen.getTopScores():
+        embed.add_field(name=f"{i.emoji} - {i.name.title()}", value = f"Points: {i.score}", inline=False)
+    await ctx.channel.send(embed=embed)
 
 @client.command()
 async def fixedNumber(ctx,number, *, animal):
