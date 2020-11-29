@@ -81,6 +81,10 @@ async def fixedNumber(ctx,number, *, animal):
     pair = gen.createPair(Generator.getAnimal(gen, animal))
     await sendMessage(ctx, number, pair)
 
+@client.command()
+async def clear(ctx, amount=5):
+    await ctx.channel.purge(limit=amount)
+
 async def sendMessage(ctx, number, pair):
     yName = pair.y.name if number == 1 else pair.y.plural
     number = "a" if number == 1 else number
