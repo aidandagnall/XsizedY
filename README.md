@@ -24,16 +24,32 @@ with.
 Or you can load up the site and find a few of your own to really seem like that
 wacky friend that comes up with crazy ideas to entertain their friends.
 
+## Running
+
+### Discord Bot
+
+```bash
+# on linux
+python3 bot/bot.py
+
+# on windows
+py -3 .\\bot\\bot.py
+```
+
+### Web app
+
+```bash
+cd web
+
+npm start
+```
+
 ## FAQ
-
-### **Can we add our own animals/creatures/other to make this even more interesting?**
-
-Sure.
-
-### **So how did you get the emoji characters?**
-
-DO. NOT. MENTION. EMOJI.
 
 ### **Is this as pointless as it sounds?**
 
 Somehow, it's even more pointless that it sounds.
+
+### **Is the ranking system remotely fair?**
+
+Absolutely not I don't even remember why we wanted to do it.
