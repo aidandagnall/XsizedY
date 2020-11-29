@@ -48,7 +48,7 @@ npm start
 
 ### **Is this as pointless as it sounds?**
 
-Somehow, it's even more pointless that it sounds.
+Somehow, it's even more pointless than it sounds.
 
 ### **Is the ranking system remotely fair?**
 
