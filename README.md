@@ -9,7 +9,7 @@ That's right! It's
 Only problem? Well, it get's a bit boring, doesn't it. If only there was a way
 to create *new* questions of a remarkably similar nature.
 
-> Would your rather fight a tiger sized rabbit, or 9 rabbit sized tigers?
+> Would you rather fight a tiger sized rabbit, or 9 rabbit sized tigers?
 
 Wow, now that really is fun and interesting and completely different!
 
@@ -22,7 +22,7 @@ laugh along with all your friends about the wacky scenarios you can come up
 with.
 
 Or you can load up the site and find a few of your own to really seem like that
-wacky friend that comes up with crazy ideas to entertain their friends.
+wacky individual that comes up with crazy ideas to entertain their friends.
 
 ## Running
 
