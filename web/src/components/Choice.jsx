@@ -13,16 +13,22 @@ class Choice extends React.Component {
             this.number = String(this.props.counter)
             this.name = this.props.animals[0].plural
         }
+        this.emoji = String.fromCodePoint(parseInt(this.props.animals[0].emoji, 16))
 
 
         return (
             <div>
                 <Button variant={this.props.colour} className="Choice" size="lg" onClick={(e) => this.props.handler(this.props.animal)} block>
-                    <h1>{this.number} {this.props.animals[1].name} sized {this.name}</h1>
+                    <h1>{this.number} {this.props.animals[1].name} sized {this.name} {this.emoji}</h1>
                 </Button> {' '}
             </div>
         )
     }
+
+    unicodeToChar(text){
+        return text.replace(/\\u[\dA-F]{4}/gi, function(match){
+           return String.fromCharCode(parseInt(match.replace(/\\u/g, ''), 16));});
+     }
 }
 
 export default Choice;
